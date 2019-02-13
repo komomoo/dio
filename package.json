@@ -1,0 +1,33 @@
+{
+  "name": "@momoko/dio",
+  "version": "0.1.0",
+  "description": "📦 渐进式打包工具",
+  "author": "momoko <ko.momo@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wannaxiao/eslint-config"
+  },
+  "keywords": [
+    "rollup",
+    "webpack",
+    "zero-config bundler"
+  ],
+  "bin": {
+    "dio": "bin/dio.js"
+  },
+  "scripts": {
+    "release": "sh build/release.sh"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@momoko/js"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@momoko/eslint-config-js": "^0.1.2",
+    "standard-version": "^4.4.0"
+  }
+}
