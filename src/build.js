@@ -12,7 +12,13 @@ const pkg = pkgLoader()
 const dioConfig = configLoader(process.cwd(), pkg)
 const rollupConfigs = rollupConfigGenerator(dioConfig, pkg, formatMapping)
 
-;(async () => {
+module.exports = async (cliConfig) => {
+  if (cliConfig.debug) {
+    console.log('\npkg: ', pkg)
+    console.log('\ndioConfig: ', dioConfig)
+    console.log('\nrollupConfigs: ', rollupConfigs)
+  }
+
   if (!fs.existsSync(dioConfig.output.directory)) fs.mkdirSync(dioConfig.output.directory)
 
   for (const config of rollupConfigs) {
@@ -40,4 +46,4 @@ const rollupConfigs = rollupConfigGenerator(dioConfig, pkg, formatMapping)
 
     spinner.succeed()
   }
-})()
+}
