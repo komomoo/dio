@@ -5,7 +5,7 @@
 module.exports = ({ pkg } = {}) => {
   return {
     // 输入
-    input: 'src/lib/index.js',
+    input: 'src/index.js',
 
     // 输出
     output: {
