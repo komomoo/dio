@@ -1,17 +1,19 @@
 {
-  "name": "@momoko/dio",
+  "name": "dio-bundler",
   "version": "0.1.0",
-  "description": "📦 渐进式打包工具",
+  "description": "📦 零配置的 javascript 包/库构建工具，基于 rollup",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/wannaxiao/eslint-config"
+    "url": "https://github.com/wannaxiao/dio"
   },
   "keywords": [
     "rollup",
     "webpack",
+    "javascript bundler",
+    "vue bundler",
     "zero-config bundler"
   ],
   "bin": {
@@ -25,7 +27,23 @@
       "@momoko/js"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "ora": "^3.1.0",
+    "postcss": "^7.0.14",
+    "rollup": "^1.2.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^4.7.1",
+    "stylus": "^0.54.5",
+    "terser": "^3.16.1",
+    "vue-template-compiler": "^2.6.6",
+    "yargs": "^13.2.1"
+  },
   "devDependencies": {
     "@momoko/eslint-config-js": "^0.1.2",
     "standard-version": "^4.4.0"
