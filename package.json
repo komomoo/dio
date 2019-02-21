@@ -21,7 +21,7 @@
     "dio": "bin/dio.js"
   },
   "scripts": {
-    "release": "sh build/release.sh"
+    "release": "sh scripts/release.sh"
   },
   "eslintConfig": {
     "extends": [
