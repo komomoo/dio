@@ -23,7 +23,7 @@ yarn add -D dio-bundler # 或npm i -D dio-bundler
 
 dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', 'cjs'` 三种格式的构建包（包含未压缩和已压缩版本）。
 
-<img src="https://wannaxiao.github.io/dio/docs/assets/cli.png">
+<img src="https://github.com/wannaxiao/dio/blob/master/docs/assets/cli.png?raw=true">
 
 ### 自定义配置
 
