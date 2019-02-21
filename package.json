@@ -1,7 +1,7 @@
 {
   "name": "dio-bundler",
   "version": "0.1.0",
-  "description": "📦 零配置的 javascript 包/库构建工具，基于 rollup",
+  "description": "📦 零配置 javascript 包/库构建工具，基于 rollup",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,
@@ -14,7 +14,8 @@
     "webpack",
     "javascript bundler",
     "vue bundler",
-    "zero-config bundler"
+    "zero-config bundler",
+    "package-bundler"
   ],
   "bin": {
     "dio": "bin/dio.js"
