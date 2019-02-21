@@ -8,11 +8,11 @@ const pkgLoader = require('./utils/pkg-loader')
 const configLoader = require('./utils/config-loader')
 const rollupConfigGenerator = require('./utils/rollup-config-generator')
 
-const pkg = pkgLoader()
-const dioConfig = configLoader(process.cwd(), pkg)
-const rollupConfigs = rollupConfigGenerator(dioConfig, pkg, formatMapping)
-
 module.exports = async (cliConfig) => {
+  const pkg = pkgLoader()
+  const dioConfig = configLoader(process.cwd(), pkg, cliConfig)
+  const rollupConfigs = rollupConfigGenerator(dioConfig, pkg, formatMapping)
+
   if (cliConfig.debug) {
     console.log('\npkg: ', pkg)
     console.log('\ndioConfig: ', dioConfig)
