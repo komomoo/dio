@@ -46,7 +46,7 @@
     "yargs": "^13.2.1"
   },
   "devDependencies": {
-    "@momoko/eslint-config-js": "^0.1.2",
+    "@momoko/eslint-config-js": "^0.2.0",
     "standard-version": "^4.4.0"
   }
 }

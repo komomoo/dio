@@ -126,13 +126,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@momoko/eslint-config-js@^0.1.2":
-  version "0.1.4"
-  resolved "http://registry.npm.taobao.org/@momoko/eslint-config-js/download/@momoko/eslint-config-js-0.1.4.tgz#c8b8a6e7da13b83263de487b90b940396dd62afb"
-  integrity sha1-yLim59oTuDJj3kh7kLlAOW3WKvs=
+"@momoko/eslint-config-js@^0.2.0":
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/@momoko/eslint-config-js/download/@momoko/eslint-config-js-0.2.0.tgz#bb6c11a6811e1ba508605e135adde0faba4161de"
+  integrity sha1-u2wRpoEeG6UIYF4TWt3g+rpBYd4=
   dependencies:
     babel-eslint "^10.0.1"
-    eslint "^5.11.0"
+    eslint "^5.14.1"
     eslint-config-standard "^12.0.0"
     eslint-plugin-import "^2.14.0"
     eslint-plugin-node "^8.0.0"
@@ -1374,7 +1374,7 @@ eslint-visitor-keys@^1.0.0:
   resolved "http://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha1-PzGA+y4pEBdxastMnW1bXDSmqB0=
 
-eslint@^5.11.0:
+eslint@^5.14.1:
   version "5.14.1"
   resolved "http://registry.npm.taobao.org/eslint/download/eslint-5.14.1.tgz#490a28906be313685c55ccd43a39e8d22efc04ba"
   integrity sha1-SQookGvjE2hcVczUOjno0i78BLo=
