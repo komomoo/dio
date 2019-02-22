@@ -14,7 +14,7 @@
 ### 安装
 
 ```bash
-yarn add -D dio-bundler # 或npm i -D dio-bundler
+yarn add -D dio-bundler # 或 npm i -D dio-bundler
 ```
 
 ### 使用
