@@ -42,7 +42,6 @@
     "rollup-plugin-vue": "^4.7.1",
     "stylus": "^0.54.5",
     "terser": "^3.16.1",
-    "vue-template-compiler": "^2.6.6",
     "yargs": "^13.2.1"
   },
   "devDependencies": {

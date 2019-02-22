@@ -30,3 +30,7 @@ dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', '
 可在项目根目录新建 `dio.config.js` 自定义 dio 构建配置。
 
 [dio 默认配置/配置示例](https://github.com/wannaxiao/dio/blob/master/src/config/dio.config.js)
+
+<br>
+<br>
+😉😘 如果它对你有所帮助，可以点一下 <b>⭐️<a href="#">Star</a></b> ~
