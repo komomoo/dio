@@ -1,6 +1,6 @@
 {
   "name": "dio-bundler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "📦 零配置 javascript 包/库构建工具，基于 rollup",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
@@ -38,7 +38,6 @@
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-vue": "^4.7.1",
     "stylus": "^0.54.5",
     "terser": "^3.16.1",
