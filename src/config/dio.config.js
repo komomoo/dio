@@ -15,8 +15,6 @@ module.exports = ({ pkg } = {}) => {
       name: pkg.name,
       // 格式
       format: ['umd', 'es', 'cjs'],
-      // 外部模块
-      globals: {},
       // 顶部注释
       banner: `/**
  * ${pkg.name} v${pkg.version}
@@ -25,5 +23,8 @@ module.exports = ({ pkg } = {}) => {
  */
 `,
     },
+
+    // 外部模块
+    external: [],
   }
 }

@@ -12,7 +12,7 @@ const vue = require('rollup-plugin-vue')
 
 module.exports = (dioConfig, pkg, formatMapping) => {
   const baseConfig = {
-    input: dioConfig.input,
+    ...dioConfig,
     plugins: [
       resolve({
         extensions: ['.mjs', '.js', '.jsx', '.json', '.vue'],
@@ -46,11 +46,9 @@ module.exports = (dioConfig, pkg, formatMapping) => {
     const config = {
       ...baseConfig,
       output: {
+        ...dioConfig.output,
         file: `${dioConfig.output.directory}/${dioConfig.output.name}${formatMapping[format] ? `${formatMapping[format]}` : ''}`,
         format,
-        name: dioConfig.output.name,
-        banner: dioConfig.output.banner,
-        globals: dioConfig.output.globals,
       },
     }
 
