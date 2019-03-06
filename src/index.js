@@ -13,5 +13,5 @@ const cliConfig = {
 const command = yargs.argv._[0]
 
 if (command === undefined || command === 'build') {
-  require('./build')(cliConfig)
+  require('./core/build')(cliConfig)
 }
