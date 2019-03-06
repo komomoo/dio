@@ -2581,6 +2581,11 @@ micromatch@^3.1.10:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
+mime@^2.3.1:
+  version "2.4.0"
+  resolved "http://registry.npm.taobao.org/mime/download/mime-2.4.0.tgz#e051fd881358585f3279df333fe694da0bcffdd6"
+  integrity sha1-4FH9iBNYWF8yed8zP+aU2gvP/dY=
+
 mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/mimic-fn/download/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
@@ -2630,6 +2635,11 @@ mkdirp@0.5.x, mkdirp@^0.5.1, mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mkpath@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/mkpath/download/mkpath-1.0.0.tgz#ebb3a977e7af1c683ae6fda12b545a6ba6c5853d"
+  integrity sha1-67Opd+evHGg65v2hK1Raa6bFhT0=
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -3717,6 +3727,15 @@ rollup-plugin-postcss@^2.0.3:
     resolve "^1.5.0"
     rollup-pluginutils "^2.0.1"
     style-inject "^0.3.0"
+
+rollup-plugin-url@^2.2.0:
+  version "2.2.0"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-url/download/rollup-plugin-url-2.2.0.tgz#bc721af685eaa1af26892ea13d46c112e19e3db4"
+  integrity sha1-vHIa9oXqoa8miS6hPUbBEuGePbQ=
+  dependencies:
+    mime "^2.3.1"
+    mkpath "^1.0.0"
+    rollup-pluginutils "^2.3.3"
 
 rollup-plugin-vue@^4.7.1:
   version "4.7.2"
