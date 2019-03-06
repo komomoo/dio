@@ -4,6 +4,7 @@
 
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
+const url = require('rollup-plugin-url')
 const json = require('rollup-plugin-json')
 const babel = require('rollup-plugin-babel')
 const postcss = require('rollup-plugin-postcss')
@@ -18,6 +19,7 @@ module.exports = (dioConfig, pkg, formatMapping) => {
       }),
       commonjs(),
       json(),
+      url({ limit: 10 * 1024 }),
       vue({
         defaultLang: {
           style: 'stylus',
@@ -48,6 +50,7 @@ module.exports = (dioConfig, pkg, formatMapping) => {
         format,
         name: dioConfig.output.name,
         banner: dioConfig.output.banner,
+        globals: dioConfig.output.globals,
       },
     }
 

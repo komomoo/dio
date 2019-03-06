@@ -3,10 +3,10 @@ const ora = require('ora')
 const rollup = require('rollup')
 const terser = require('terser')
 
-const formatMapping = require('./utils/format-mapping')
-const pkgLoader = require('./utils/pkg-loader')
-const configLoader = require('./utils/config-loader')
-const rollupConfigGenerator = require('./utils/rollup-config-generator')
+const pkgLoader = require('./loader/pkg-loader')
+const configLoader = require('./loader/config-loader')
+const formatMapping = require('./core/format-mapping')
+const rollupConfigGenerator = require('./core/rollup-config-generator')
 
 module.exports = async (cliConfig) => {
   const pkg = pkgLoader()
