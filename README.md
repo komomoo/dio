@@ -18,8 +18,20 @@ yarn add -D dio-bundler # 或 npm i -D dio-bundler
 ```
 
 ### 使用
- 
-命令行中进入项目目录，输入命令 `dio` 并回车。
+
+**第一步**：package.json 中新增 scripts：
+
+```js
+  "scripts": {
+    "build": "dio"
+  },
+```
+
+**第二步**：命令行进入项目目录，运行：
+
+```bash
+yarn build # 或 npm run build
+```
 
 dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', 'cjs'` 三种格式的构建包（包含未压缩和已压缩版本）。
 
