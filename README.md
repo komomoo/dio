@@ -27,7 +27,7 @@ dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', '
 
 ### 自定义配置
 
-可在项目根目录新建 `dio.config.js` 自定义 dio 构建配置。
+可在项目根目录新建 `dio.config.js` 自定义 dio 构建配置（或在 `package.json` 中使用 `dioConfig` 对象配置）。
 
 [dio 默认配置/配置示例](https://github.com/wannaxiao/dio/blob/master/src/config/dio.config.js)
 
