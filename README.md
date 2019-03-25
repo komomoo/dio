@@ -46,3 +46,9 @@ dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', '
 <br>
 <br>
 😉😘 如果它对你有所帮助，可以点一下 <b>⭐️<a href="#">Star</a></b> ~
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2018-present, momoko
