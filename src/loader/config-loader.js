@@ -17,7 +17,7 @@ module.exports = (cwd = process.cwd(), pkg, cliConfig) => {
   } else if (pkg.dioConfig) {
     return merge(defaultConfig, pkg.dioConfig)
   } else {
-    if (cliConfig.debug) console.warn('未找到 dio.config.js 文件，将使用默认配置构建...')
+    if (cliConfig.debug) console.warn('未找到 dio 配置，将使用默认配置构建...')
     return defaultConfig
   }
 }

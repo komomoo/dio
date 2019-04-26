@@ -9,6 +9,7 @@ const json = require('rollup-plugin-json')
 const babel = require('rollup-plugin-babel')
 const postcss = require('rollup-plugin-postcss')
 const vue = require('rollup-plugin-vue')
+const autoprefixer = require('autoprefixer')
 
 module.exports = (dioConfig, pkg, formatMapping) => {
   const baseConfig = {
@@ -29,7 +30,7 @@ module.exports = (dioConfig, pkg, formatMapping) => {
           isProduction: true,
         },
         style: {
-          // postcssPlugins: postcssCfg
+          postcssPlugins: [autoprefixer],
         },
       }),
       postcss({
