@@ -16,7 +16,7 @@ module.exports = ({ pkg } = {}) => {
       // 格式
       format: ['umd', 'es', 'cjs'],
       // 顶部注释
-      banner: `/**
+      banner: `/*!
  * ${pkg.name} v${pkg.version}
  * Copyright (c) 2018-present, ${pkg.author}
  * Released under the ${pkg.license} License.
