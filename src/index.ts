@@ -6,12 +6,12 @@ const yargs = require('yargs')
   })
   .help('h')
 
-const cliConfig = {
+global.cliConfig = {
   debug: !!yargs.argv.debug, // 调试模式
 }
 
 const command = yargs.argv._[0]
 
 if (command === undefined || command === 'build') {
-  require('./core/build')(cliConfig)
+  require('./core/build')()
 }

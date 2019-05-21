@@ -2,9 +2,11 @@
  * package.json 加载器
  */
 
-const fs = require('fs')
+import * as fs from 'fs'
 
-module.exports = (cwd = process.cwd()) => {
+export default (
+  cwd: string = process.cwd()
+): Readonly<any> => {
   const pkgPath = `${cwd}/package.json`
   if (fs.existsSync(pkgPath)) {
     return require(pkgPath)

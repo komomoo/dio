@@ -1,19 +1,19 @@
-const fs = require('fs')
-const ora = require('ora')
-const rollup = require('rollup')
-const terser = require('terser')
+import * as fs from 'fs'
+import * as ora from 'ora'
+import rollup from 'rollup'
+import terser from 'terser'
 
-const pkgLoader = require('../loader/pkg-loader')
-const configLoader = require('../loader/config-loader')
-const formatMapping = require('../core/format-mapping')
-const rollupConfigGenerator = require('../core/rollup-config-generator')
+import pkgLoader from '../loader/pkg-loader'
+import configLoader from '../loader/config-loader'
+import formatMapping from '../core/format-mapping'
+import rollupConfigGenerator from '../core/rollup-config-generator'
 
-module.exports = async (cliConfig) => {
+module.exports = async (): Promise<void> => {
   const pkg = pkgLoader()
-  const dioConfig = configLoader(process.cwd(), pkg, cliConfig)
+  const dioConfig = configLoader(process.cwd(), pkg)
   const rollupConfigs = rollupConfigGenerator(dioConfig, pkg, formatMapping)
 
-  if (cliConfig.debug) {
+  if (global.cliConfig.debug) {
     console.log('\npkg: ', pkg)
     console.log('\ndioConfig: ', dioConfig)
     console.log('\nrollupConfigs: ', rollupConfigs)
@@ -26,7 +26,7 @@ module.exports = async (cliConfig) => {
 
     const bundle = await rollup.rollup(config)
     const { output: [{ code }] } = await bundle.generate(config.output)
-    fs.writeFile(`${config.output.file}.js`, code, (err) => {
+    fs.writeFile(`${config.output.file}.js`, code, (err): void => {
       if (err) console.error(err)
     })
 
@@ -34,13 +34,13 @@ module.exports = async (cliConfig) => {
     const minimizeCode = (dioConfig.output.banner ? dioConfig.output.banner + '\n' : '') + terser.minify(code, {
       toplevel: true,
       output: {
-        ascii_only: true,
+        ascii_only: true, // eslint-disable-line
       },
       compress: {
         // pure_funcs: ['makeMap'],
       },
     }).code
-    fs.writeFile(`${config.output.file}.min.js`, minimizeCode, (err) => {
+    fs.writeFile(`${config.output.file}.min.js`, minimizeCode, (err): void => {
       if (err) console.error(err)
     })
 

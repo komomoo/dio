@@ -2,16 +2,20 @@
  * rollup 配置生成器
  */
 
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
-const url = require('rollup-plugin-url')
-const json = require('rollup-plugin-json')
-const babel = require('rollup-plugin-babel')
-const postcss = require('rollup-plugin-postcss')
-const vue = require('rollup-plugin-vue')
-const autoprefixer = require('autoprefixer')
+import * as resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import url from 'rollup-plugin-url'
+import json from 'rollup-plugin-json'
+import babel from 'rollup-plugin-babel'
+import postcss from 'rollup-plugin-postcss'
+import vue from 'rollup-plugin-vue'
+import autoprefixer from 'autoprefixer'
 
-module.exports = (dioConfig, pkg, formatMapping) => {
+export default (
+  dioConfig: Readonly<any>,
+  pkg: Readonly<any>,
+  formatMapping: Readonly<Record<string, string>>,
+): Readonly<any>[] => {
   const baseConfig = {
     ...dioConfig,
     plugins: [
@@ -24,10 +28,6 @@ module.exports = (dioConfig, pkg, formatMapping) => {
       vue({
         defaultLang: {
           style: 'stylus',
-        },
-        template: {
-          // 强制生产模式
-          isProduction: true,
         },
         style: {
           postcssPlugins: [autoprefixer],
@@ -43,7 +43,7 @@ module.exports = (dioConfig, pkg, formatMapping) => {
     ],
   }
 
-  return dioConfig.output.format.reduce((acc, format) => {
+  return dioConfig.output.format.reduce((acc: any[], format: string): any[] => {
     const config = {
       ...baseConfig,
       output: {

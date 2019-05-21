@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    // 这可以对 `this` 上的数据属性进行更严格的推断
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    // 生成相应的 '.d.ts' 文件
+    "declaration": true,
+    // 生成相应的 '.map' 文件
+    "sourceMap": false,
+    // 删除编译后的所有的注释
+    "removeComments": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "*": ["types/*"],
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "typings",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

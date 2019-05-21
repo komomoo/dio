@@ -2,7 +2,7 @@
  * format 映射
  */
 
-module.exports = {
+export default {
   es: '.esm',
   cjs: '.common',
   umd: '',

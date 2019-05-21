@@ -2,11 +2,14 @@
  * dio 配置文件加载器
  */
 
-const fs = require('fs')
-const merge = require('lodash/merge')
+import * as fs from 'fs'
+import merge from 'lodash/merge'
 
-module.exports = (cwd = process.cwd(), pkg, cliConfig) => {
-  const defaultConfig = require('../config/dio.config.js')({ pkg })
+export default (
+  cwd: string = process.cwd(),
+  pkg: Readonly<any>,
+): Readonly<any> => {
+  const defaultConfig = require('../../src/config/dio.config.js')({ pkg })
 
   const configPath = `${cwd}/dio.config.js`
 
@@ -17,7 +20,7 @@ module.exports = (cwd = process.cwd(), pkg, cliConfig) => {
   } else if (pkg.dioConfig) {
     return merge(defaultConfig, pkg.dioConfig)
   } else {
-    if (cliConfig.debug) console.warn('未找到 dio 配置，将使用默认配置构建...')
+    if (global.cliConfig.debug) console.warn('未找到 dio 配置，将使用默认配置构建...')
     return defaultConfig
   }
 }
