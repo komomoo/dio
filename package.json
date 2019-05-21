@@ -1,6 +1,6 @@
 {
   "name": "dio-bundler",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "📦 零配置 javascript 包/库构建工具，基于 rollup",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
