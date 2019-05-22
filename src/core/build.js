@@ -1,5 +1,6 @@
 const fs = require('fs')
 const ora = require('ora')
+const shell = require('shelljs')
 const rollup = require('rollup')
 const terser = require('terser')
 
@@ -24,25 +25,30 @@ module.exports = async (cliConfig) => {
   for (const config of rollupConfigs) {
     const spinner = ora(`📦  [${config.output.format}] ${dioConfig.input} → ${config.output.file}.js`).start()
 
-    const bundle = await rollup.rollup(config)
-    const { output: [{ code }] } = await bundle.generate(config.output)
-    fs.writeFile(`${config.output.file}.js`, code, (err) => {
-      if (err) console.error(err)
-    })
+    try {
+      const bundle = await rollup.rollup(config)
+      const { output: [{ code }] } = await bundle.generate(config.output)
+      fs.writeFile(`${config.output.file}.js`, code, (err) => {
+        if (err) console.error(err)
+      })
 
-    // minimize
-    const minimizeCode = (dioConfig.output.banner ? dioConfig.output.banner + '\n' : '') + terser.minify(code, {
-      toplevel: true,
-      output: {
-        ascii_only: true,
-      },
-      compress: {
-        // pure_funcs: ['makeMap'],
-      },
-    }).code
-    fs.writeFile(`${config.output.file}.min.js`, minimizeCode, (err) => {
-      if (err) console.error(err)
-    })
+      // minimize
+      const minimizeCode = (dioConfig.output.banner ? dioConfig.output.banner + '\n' : '') + terser.minify(code, {
+        toplevel: true,
+        output: {
+          ascii_only: true,
+        },
+        compress: {
+          // pure_funcs: ['makeMap'],
+        },
+      }).code
+      fs.writeFile(`${config.output.file}.min.js`, minimizeCode, (err) => {
+        if (err) console.error(err)
+      })
+    } catch (e) {
+      console.error(`\n` + e)
+      shell.exit(1)
+    }
 
     spinner.succeed()
   }
