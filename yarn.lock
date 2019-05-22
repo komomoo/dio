@@ -1075,16 +1075,6 @@ cssnano-util-same-parent@^4.0.0:
   resolved "http://registry.npm.taobao.org/cssnano-util-same-parent/download/cssnano-util-same-parent-4.0.1.tgz#574082fb2859d2db433855835d9a8456ea18bbf3"
   integrity sha1-V0CC+yhZ0ttDOFWDXZqEVuoYu/M=
 
-cssnano@^4.1.10:
-  version "4.1.10"
-  resolved "https://registry.npm.taobao.org/cssnano/download/cssnano-4.1.10.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcssnano%2Fdownload%2Fcssnano-4.1.10.tgz#0ac41f0b13d13d465487e111b778d42da631b8b2"
-  integrity sha1-CsQfCxPRPUZUh+ERt3jULaYxuLI=
-  dependencies:
-    cosmiconfig "^5.0.0"
-    cssnano-preset-default "^4.0.7"
-    is-resolvable "^1.0.0"
-    postcss "^7.0.0"
-
 cssnano@^4.1.8:
   version "4.1.10"
   resolved "http://registry.npm.taobao.org/cssnano/download/cssnano-4.1.10.tgz#0ac41f0b13d13d465487e111b778d42da631b8b2"
@@ -1795,6 +1785,18 @@ glob@7.0.x:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+glob@^7.0.0:
+  version "7.1.4"
+  resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
+  integrity sha1-qmCKL2xXetNX4a5aXCbZqNGWklU=
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@^7.1.2, glob@^7.1.3:
   version "7.1.3"
   resolved "http://registry.npm.taobao.org/glob/download/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
@@ -2028,6 +2030,11 @@ inquirer@^6.2.2:
     string-width "^2.1.0"
     strip-ansi "^5.0.0"
     through "^2.3.6"
+
+interpret@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/interpret/download/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
+  integrity sha1-1QYaYiS+WOgIOYX1AU2EQ1lXYpY=
 
 invert-kv@^1.0.0:
   version "1.0.0"
@@ -3583,6 +3590,13 @@ readable-stream@^2.2.2, readable-stream@~2.3.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+rechoir@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.npm.taobao.org/rechoir/download/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
+  dependencies:
+    resolve "^1.1.6"
+
 redent@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/redent/download/redent-1.0.0.tgz#cf916ab1fd5f1f16dfb20822dd6ec7f730c2afde"
@@ -3695,6 +3709,13 @@ resolve-url@^0.2.1:
   resolved "http://registry.npm.taobao.org/resolve-url/download/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
+resolve@^1.1.6:
+  version "1.11.0"
+  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.11.0.tgz#4014870ba296176b86343d50b60f3b50609ce232"
+  integrity sha1-QBSHC6KWF2uGND1Qtg87UGCc4jI=
+  dependencies:
+    path-parse "^1.0.6"
+
 resolve@^1.10.0, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1, resolve@^1.9.0:
   version "1.10.0"
   resolved "http://registry.npm.taobao.org/resolve/download/resolve-1.10.0.tgz#3bdaaeaf45cc07f375656dfd2e54ed0810b101ba"
@@ -3786,6 +3807,14 @@ rollup-plugin-postcss@^2.0.3:
     rollup-pluginutils "^2.0.1"
     style-inject "^0.3.0"
 
+rollup-plugin-typescript@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-typescript/download/rollup-plugin-typescript-1.0.1.tgz#86565033b714c3d1f3aba510aad3dc519f7091e9"
+  integrity sha1-hlZQM7cUw9Hzq6UQqtPcUZ9wkek=
+  dependencies:
+    resolve "^1.10.0"
+    rollup-pluginutils "^2.5.0"
+
 rollup-plugin-url@^2.2.0:
   version "2.2.0"
   resolved "http://registry.npm.taobao.org/rollup-plugin-url/download/rollup-plugin-url-2.2.0.tgz#bc721af685eaa1af26892ea13d46c112e19e3db4"
@@ -3814,6 +3843,14 @@ rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.1,
   version "2.4.1"
   resolved "http://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.4.1.tgz#de43ab54965bbf47843599a7f3adceb723de38db"
   integrity sha1-3kOrVJZbv0eENZmn863OtyPeONs=
+  dependencies:
+    estree-walker "^0.6.0"
+    micromatch "^3.1.10"
+
+rollup-pluginutils@^2.5.0:
+  version "2.7.1"
+  resolved "https://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.7.1.tgz#a7915ce8b12c177364784bf38a1590cc6c2c8250"
+  integrity sha1-p5Fc6LEsF3NkeEvzihWQzGwsglA=
   dependencies:
     estree-walker "^0.6.0"
     micromatch "^3.1.10"
@@ -3909,6 +3946,15 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/shebang-regex/download/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+
+shelljs@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.npm.taobao.org/shelljs/download/shelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
+  integrity sha1-p/MxlSDr8J7oEnWyNorbKGZZsJc=
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
@@ -4363,6 +4409,11 @@ trim-right@^1.0.1:
 tslib@^1.9.0:
   version "1.9.3"
   resolved "http://registry.npm.taobao.org/tslib/download/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+  integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
+
+tslib@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
 
 type-check@~0.3.2:

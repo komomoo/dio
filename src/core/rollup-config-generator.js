@@ -7,6 +7,7 @@ const commonjs = require('rollup-plugin-commonjs')
 const url = require('rollup-plugin-url')
 const json = require('rollup-plugin-json')
 const babel = require('rollup-plugin-babel')
+const typescript = require('rollup-plugin-typescript')
 const postcss = require('rollup-plugin-postcss')
 const vue = require('rollup-plugin-vue')
 const autoprefixer = require('autoprefixer')
@@ -16,11 +17,12 @@ module.exports = (dioConfig, pkg, formatMapping) => {
     ...dioConfig,
     plugins: [
       resolve({
-        extensions: ['.mjs', '.js', '.jsx', '.json', '.vue'],
+        extensions: ['.mjs', '.js', '.jsx', '.json', '.vue', '.ts'],
       }),
       commonjs(),
       json(),
       url({ limit: 10 * 1024 }),
+      typescript(),
       vue({
         defaultLang: {
           style: 'stylus',
@@ -37,6 +39,7 @@ module.exports = (dioConfig, pkg, formatMapping) => {
         extensions: ['.css', '.styl', '.sass', '.scss'],
       }),
       babel({
+        extensions: ['.mjs', '.js', '.jsx', '.vue', '.ts'],
         runtimeHelpers: true,
         exclude: 'node_modules/**',
       }),
