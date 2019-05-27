@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/wannaxiao/dio/compare/v0.4.0...v0.5.0) (2019-05-27)
+
+
+### Features
+
+* add deps vue-template-compiler ([26aebc1](https://github.com/wannaxiao/dio/commit/26aebc1))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/wannaxiao/dio/compare/v0.3.1...v0.4.0) (2019-05-22)
 
