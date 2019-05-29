@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/wannaxiao/dio/compare/v0.5.0...v0.5.1) (2019-05-29)
+
+
+### Features
+
+* deps add ts ([84b05ac](https://github.com/wannaxiao/dio/commit/84b05ac))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/wannaxiao/dio/compare/v0.4.0...v0.5.0) (2019-05-27)
 
