@@ -47,8 +47,9 @@
     "stylus": "^0.54.5",
     "terser": "^3.16.1",
     "tslib": "^1.9.3",
-    "yargs": "^13.2.1",
-    "vue-template-compiler": "^2.0.0"
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.0.0",
+    "yargs": "^13.2.1"
   },
   "devDependencies": {
     "@momoko/eslint-config-js": "^0.2.0",
