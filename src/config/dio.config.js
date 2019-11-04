@@ -12,7 +12,7 @@ module.exports = ({ pkg } = {}) => {
       // 目录
       directory: 'dist',
       // 包名
-      name: pkg.name,
+      name: /\//.test(pkg.name) ? pkg.name.match(/\/(.+)/)[1] : pkg.name,
       // 格式
       format: ['umd', 'es', 'cjs'],
       // 顶部注释
