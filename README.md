@@ -35,13 +35,13 @@ yarn build # 或 npm run build
 
 dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', 'cjs'` 三种格式的构建包（包含未压缩和已压缩版本）。
 
-<img src="https://github.com/wannaxiao/dio/blob/master/docs/assets/cli.png?raw=true">
+<img src="https://github.com/komomoo/dio/blob/master/docs/assets/cli.png?raw=true">
 
 ### 自定义配置
 
 可在项目根目录新建 `dio.config.js` 自定义 dio 构建配置（或在 `package.json` 中使用 `dioConfig` 对象配置）。
 
-[dio 默认配置/配置示例](https://github.com/wannaxiao/dio/blob/master/src/config/dio.config.js)
+[dio 默认配置/配置示例](https://github.com/komomoo/dio/blob/master/src/config/dio.config.js)
 
 <br>
 <br>
@@ -51,4 +51,4 @@ dio 默认以 `src/index.js` 为入口，在 `dist` 目录输出 `'umd', 'es', '
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2018-present, momoko
+Copyright (c) 2018-present, komo
