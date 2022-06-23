@@ -20,8 +20,7 @@ module.exports = ({ pkg } = {}) => {
  * ${pkg.name} v${pkg.version}
  * Copyright (c) 2018-present, ${pkg.author}
  * Released under the ${pkg.license} License.
- */
-`,
+ */`,
     },
 
     // 外部模块
