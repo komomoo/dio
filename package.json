@@ -1,6 +1,6 @@
 {
   "name": "dio-bundler",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "📦 零配置 JavaScript、TypeScript、Vue 包构建工具，基于 Rollup",
   "author": "komo <ko.momo@qq.com>",
   "license": "MIT",
